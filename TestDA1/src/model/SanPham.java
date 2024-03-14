@@ -11,15 +11,7 @@ package model;
 public class SanPham {
     private int IDSP, IDThuongHieu;
     private String TenSanPham, NgayTao, NgaySua;   
-    private int SoLuong,TrangThai;
-
-    public int getSoLuong() {
-        return SoLuong;
-    }
-
-    public void setSoLuong(int SoLuong) {
-        this.SoLuong = SoLuong;
-    }
+    private int TrangThai;
 
     public int getIDSP() {
         return IDSP;
@@ -72,23 +64,20 @@ public class SanPham {
     public SanPham() {
     }
 
-    public SanPham(int IDSP, int IDThuongHieu, String TenSanPham, String NgayTao, String NgaySua, int SoLuong, int TrangThai) {
+    public SanPham(int IDThuongHieu, String TenSanPham, String NgayTao, String NgaySua, int TrangThai) {
+        this.IDThuongHieu = IDThuongHieu;
+        this.TenSanPham = TenSanPham;
+        this.NgayTao = NgayTao;
+        this.NgaySua = NgaySua;
+        this.TrangThai = TrangThai;
+    }
+
+    public SanPham(int IDSP, int IDThuongHieu, String TenSanPham, String NgayTao, String NgaySua, int TrangThai) {
         this.IDSP = IDSP;
         this.IDThuongHieu = IDThuongHieu;
         this.TenSanPham = TenSanPham;
         this.NgayTao = NgayTao;
         this.NgaySua = NgaySua;
-        this.SoLuong = SoLuong;
         this.TrangThai = TrangThai;
     }
-
-    public SanPham(int IDThuongHieu, String TenSanPham, String NgayTao, String NgaySua, int SoLuong, int TrangThai) {
-        this.IDThuongHieu = IDThuongHieu;
-        this.TenSanPham = TenSanPham;
-        this.NgayTao = NgayTao;
-        this.NgaySua = NgaySua;
-        this.SoLuong = SoLuong;
-        this.TrangThai = TrangThai;
-    }
-
 }

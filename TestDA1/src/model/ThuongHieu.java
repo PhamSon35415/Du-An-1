@@ -8,26 +8,10 @@ package model;
  *
  * @author Admin
  */
-public class SanPham {
-    private int IDSP, IDThuongHieu;
-    private String TenSanPham, NgayTao, NgaySua;   
-    private int SoLuong,TrangThai;
-
-    public int getSoLuong() {
-        return SoLuong;
-    }
-
-    public void setSoLuong(int SoLuong) {
-        this.SoLuong = SoLuong;
-    }
-
-    public int getIDSP() {
-        return IDSP;
-    }
-
-    public void setIDSP(int IDSP) {
-        this.IDSP = IDSP;
-    }
+public class ThuongHieu {
+    private int IDThuongHieu;
+    private String TenThuongHieu, NgayTao, NgaySua;
+    private int TrangThai;
 
     public int getIDThuongHieu() {
         return IDThuongHieu;
@@ -37,12 +21,12 @@ public class SanPham {
         this.IDThuongHieu = IDThuongHieu;
     }
 
-    public String getTenSanPham() {
-        return TenSanPham;
+    public String getTenThuongHieu() {
+        return TenThuongHieu;
     }
 
-    public void setTenSanPham(String TenSanPham) {
-        this.TenSanPham = TenSanPham;
+    public void setTenThuongHieu(String TenThuongHieu) {
+        this.TenThuongHieu = TenThuongHieu;
     }
 
     public String getNgayTao() {
@@ -69,25 +53,21 @@ public class SanPham {
         this.TrangThai = TrangThai;
     }
 
-    public SanPham() {
+    public ThuongHieu() {
     }
 
-    public SanPham(int IDSP, int IDThuongHieu, String TenSanPham, String NgayTao, String NgaySua, int SoLuong, int TrangThai) {
-        this.IDSP = IDSP;
-        this.IDThuongHieu = IDThuongHieu;
-        this.TenSanPham = TenSanPham;
+    public ThuongHieu(String TenThuongHieu, String NgayTao, String NgaySua, int TrangThai) {
+        this.TenThuongHieu = TenThuongHieu;
         this.NgayTao = NgayTao;
         this.NgaySua = NgaySua;
-        this.SoLuong = SoLuong;
         this.TrangThai = TrangThai;
     }
 
-    public SanPham(int IDThuongHieu, String TenSanPham, String NgayTao, String NgaySua, int SoLuong, int TrangThai) {
+    public ThuongHieu(int IDThuongHieu, String TenThuongHieu, String NgayTao, String NgaySua, int TrangThai) {
         this.IDThuongHieu = IDThuongHieu;
-        this.TenSanPham = TenSanPham;
+        this.TenThuongHieu = TenThuongHieu;
         this.NgayTao = NgayTao;
         this.NgaySua = NgaySua;
-        this.SoLuong = SoLuong;
         this.TrangThai = TrangThai;
     }
 
